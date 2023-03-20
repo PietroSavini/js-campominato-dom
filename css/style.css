@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* common */
+header{
+    width: 100%;
+    height: 100px;
+    /* debug */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 80%;
+}
+
+.btn{    
+    padding: 0 1rem;
+    cursor: pointer;
+}
+/* header section------------------------------------------------------------- */
+
+header .wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper>div{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+select{
+    cursor: pointer;
+    padding: 0 5em 0 0;
+}
+
+
+/* main --------------------------------------------------------------------------*/
+main{
+    background-color: #7FFFD4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem;
+    
+}
+section{
+    height: 1000px;
+    width: 1000px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.box{
+    outline: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.easy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.hard{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.toggled{
+    background-color: blue;
+}
+
+/* footer */
+footer{
+    padding: 3rem 5rem;
+    text-align: center;
+}
+
