@@ -94,6 +94,13 @@ section{
     background-color: blue;
 }
 
+.mine{
+    background-color: transparent;
+}
+
+.boom{
+    background-color: red;
+}
 /* footer */
 footer{
     padding: 3rem 5rem;
