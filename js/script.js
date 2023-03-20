@@ -43,19 +43,20 @@ function generateBombs (bombNum, squareNumber){
     return randomNumbers;
 }
 
-//interazione al click degli square
+//avvio gioco e creazione griglia
 playBtn.addEventListener("click" , function(){
     userScore = 0;
     squareNumber = createGrid(difficulty.value);
     let maxPoints = squareNumber - nBomb ;
     let squares = document.querySelectorAll(".box");
-    console.log(squares);
     const bombArray = generateBombs(nBomb , squareNumber);
     console.log(bombArray);
     squares.forEach(function(square, index){
         if(bombArray.includes(index + 1)){
             square.classList.add("mine");
         }
+
+        //interazione al click degli square
         square.addEventListener("click", function(){
             if(square.classList.contains("toggled")){
                 square.classList.remove("toggled");
@@ -72,7 +73,7 @@ playBtn.addEventListener("click" , function(){
             
             if(square.classList.contains("mine")){
                 square.classList.add("boom");
-               const  mines = document.querySelectorAll(".mine");
+                const  mines = document.querySelectorAll(".mine");
                     mines.forEach(function(mine) {
                         mine.classList.add("boom");
                     });
